@@ -1,0 +1,12 @@
+includes:
+    - vendor/phpstan/phpstan-phpunit/extension.neon
+
+parameters:
+	level: 8
+	paths:
+		- src
+		- tests
+	ignoreErrors:
+		-
+			message: '#Unsafe usage of new static\(\)\.#'
+			path: src/Riot/Exception/RiotApiException.php

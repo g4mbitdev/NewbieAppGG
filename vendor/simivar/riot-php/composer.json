@@ -1,0 +1,43 @@
+{
+    "name": "simivar/riot-php",
+    "description": "Dependency-injection based wrapper around Riot Games APIs.",
+    "keywords": [
+        "riot", "riot games", "lol", "league of legends", "valorant", "teamfight tactics", "tft",
+        "legends of runeterra", "lor", "psr-17", "psr-17", "httplug"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "simivar",
+            "email": "simivar@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "psr/http-client": "^1.0",
+        "psr/http-message": "^1.0",
+        "psr/http-factory": "^1.0",
+        "ext-json": "*",
+        "ramsey/collection": "^1.1",
+        "webmozart/assert": "^1.9",
+        "myclabs/php-enum": "^1.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Riot\\": "src/Riot"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Riot\\Tests\\": "tests"
+        }
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "phpunit/phpunit": "^9.4",
+        "symfony/http-client": "^5.1",
+        "nyholm/psr7": "^1.3",
+        "phpstan/phpstan-phpunit": "^0.12.16"
+    }
+}
